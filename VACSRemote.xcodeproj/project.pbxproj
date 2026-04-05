@@ -1,0 +1,614 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 60;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A00000000000000000000001 /* VACSRemoteApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000101 /* VACSRemoteApp.swift */; };
+		A00000000000000000000002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000102 /* ContentView.swift */; };
+		A00000000000000000000003 /* RemoteEndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000103 /* RemoteEndpoint.swift */; };
+		A00000000000000000000004 /* ConnectionState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000104 /* ConnectionState.swift */; };
+		A00000000000000000000005 /* EndpointNormalizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000105 /* EndpointNormalizer.swift */; };
+		A00000000000000000000006 /* ConnectionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000106 /* ConnectionRepository.swift */; };
+		A00000000000000000000007 /* ReachabilityPreflight.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000107 /* ReachabilityPreflight.swift */; };
+		A00000000000000000000008 /* ConnectionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000108 /* ConnectionListViewModel.swift */; };
+		A00000000000000000000009 /* RemoteWebViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000109 /* RemoteWebViewModel.swift */; };
+		A0000000000000000000000A /* ConnectionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000010A /* ConnectionListView.swift */; };
+		A0000000000000000000000B /* ConnectionFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000010B /* ConnectionFormView.swift */; };
+		A0000000000000000000000C /* RemoteSessionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000010C /* RemoteSessionView.swift */; };
+		A0000000000000000000000D /* WebViewStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000010D /* WebViewStore.swift */; };
+		A0000000000000000000000E /* WebViewContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = A0000000000000000000010E /* WebViewContainer.swift */; };
+		A00000000000000000000011 /* EndpointNormalizerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000111 /* EndpointNormalizerTests.swift */; };
+		A00000000000000000000012 /* ConnectionRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000112 /* ConnectionRepositoryTests.swift */; };
+		A00000000000000000000013 /* ReachabilityPreflightTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000113 /* ReachabilityPreflightTests.swift */; };
+		A00000000000000000000014 /* RemoteWebViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000114 /* RemoteWebViewModelTests.swift */; };
+		A00000000000000000000015 /* VACSRemoteUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000115 /* VACSRemoteUITests.swift */; };
+		A00000000000000000000016 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000116 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A00000000000000000000050 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000060 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A00000000000000000000040;
+			remoteInfo = VACSRemote;
+		};
+		A00000000000000000000052 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A00000000000000000000060 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A00000000000000000000040;
+			remoteInfo = VACSRemote;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A00000000000000000000101 /* VACSRemoteApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VACSRemoteApp.swift; sourceTree = "<group>"; };
+		A00000000000000000000102 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		A00000000000000000000103 /* RemoteEndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteEndpoint.swift; sourceTree = "<group>"; };
+		A00000000000000000000104 /* ConnectionState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionState.swift; sourceTree = "<group>"; };
+		A00000000000000000000105 /* EndpointNormalizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointNormalizer.swift; sourceTree = "<group>"; };
+		A00000000000000000000106 /* ConnectionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionRepository.swift; sourceTree = "<group>"; };
+		A00000000000000000000107 /* ReachabilityPreflight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityPreflight.swift; sourceTree = "<group>"; };
+		A00000000000000000000108 /* ConnectionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionListViewModel.swift; sourceTree = "<group>"; };
+		A00000000000000000000109 /* RemoteWebViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteWebViewModel.swift; sourceTree = "<group>"; };
+		A0000000000000000000010A /* ConnectionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionListView.swift; sourceTree = "<group>"; };
+		A0000000000000000000010B /* ConnectionFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionFormView.swift; sourceTree = "<group>"; };
+		A0000000000000000000010C /* RemoteSessionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteSessionView.swift; sourceTree = "<group>"; };
+		A0000000000000000000010D /* WebViewStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewStore.swift; sourceTree = "<group>"; };
+		A0000000000000000000010E /* WebViewContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewContainer.swift; sourceTree = "<group>"; };
+		A0000000000000000000010F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A00000000000000000000111 /* EndpointNormalizerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndpointNormalizerTests.swift; sourceTree = "<group>"; };
+		A00000000000000000000112 /* ConnectionRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionRepositoryTests.swift; sourceTree = "<group>"; };
+		A00000000000000000000113 /* ReachabilityPreflightTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityPreflightTests.swift; sourceTree = "<group>"; };
+		A00000000000000000000114 /* RemoteWebViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteWebViewModelTests.swift; sourceTree = "<group>"; };
+		A00000000000000000000115 /* VACSRemoteUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VACSRemoteUITests.swift; sourceTree = "<group>"; };
+		A00000000000000000000116 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A00000000000000000000120 /* VACSRemote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VACSRemote.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000121 /* VACSRemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VACSRemoteTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000122 /* VACSRemoteUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = VACSRemoteUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A00000000000000000000020 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000021 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000026 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A00000000000000000000070 = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000071 /* VACSRemote */,
+				A00000000000000000000072 /* VACSRemoteTests */,
+				A00000000000000000000079 /* VACSRemoteUITests */,
+				A00000000000000000000073 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A00000000000000000000071 /* VACSRemote */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000116 /* Assets.xcassets */,
+				A0000000000000000000010F /* Info.plist */,
+				A00000000000000000000101 /* VACSRemoteApp.swift */,
+				A00000000000000000000102 /* ContentView.swift */,
+				A00000000000000000000074 /* Models */,
+				A00000000000000000000075 /* Services */,
+				A00000000000000000000076 /* ViewModels */,
+				A00000000000000000000077 /* Views */,
+				A00000000000000000000078 /* WebView */,
+			);
+			path = VACSRemote;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000072 /* VACSRemoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000111 /* EndpointNormalizerTests.swift */,
+				A00000000000000000000112 /* ConnectionRepositoryTests.swift */,
+				A00000000000000000000113 /* ReachabilityPreflightTests.swift */,
+				A00000000000000000000114 /* RemoteWebViewModelTests.swift */,
+			);
+			path = VACSRemoteTests;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000073 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000120 /* VACSRemote.app */,
+				A00000000000000000000121 /* VACSRemoteTests.xctest */,
+				A00000000000000000000122 /* VACSRemoteUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000074 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000103 /* RemoteEndpoint.swift */,
+				A00000000000000000000104 /* ConnectionState.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000075 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000105 /* EndpointNormalizer.swift */,
+				A00000000000000000000106 /* ConnectionRepository.swift */,
+				A00000000000000000000107 /* ReachabilityPreflight.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000076 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000108 /* ConnectionListViewModel.swift */,
+				A00000000000000000000109 /* RemoteWebViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000077 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A0000000000000000000010A /* ConnectionListView.swift */,
+				A0000000000000000000010B /* ConnectionFormView.swift */,
+				A0000000000000000000010C /* RemoteSessionView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000078 /* WebView */ = {
+			isa = PBXGroup;
+			children = (
+				A0000000000000000000010D /* WebViewStore.swift */,
+				A0000000000000000000010E /* WebViewContainer.swift */,
+			);
+			path = WebView;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000079 /* VACSRemoteUITests */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000115 /* VACSRemoteUITests.swift */,
+			);
+			path = VACSRemoteUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A00000000000000000000040 /* VACSRemote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000090 /* Build configuration list for PBXNativeTarget "VACSRemote" */;
+			buildPhases = (
+				A00000000000000000000022 /* Sources */,
+				A00000000000000000000020 /* Frameworks */,
+				A00000000000000000000023 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VACSRemote;
+			productName = VACSRemote;
+			productReference = A00000000000000000000120 /* VACSRemote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A00000000000000000000041 /* VACSRemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000091 /* Build configuration list for PBXNativeTarget "VACSRemoteTests" */;
+			buildPhases = (
+				A00000000000000000000024 /* Sources */,
+				A00000000000000000000021 /* Frameworks */,
+				A00000000000000000000025 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A00000000000000000000051 /* PBXTargetDependency */,
+			);
+			name = VACSRemoteTests;
+			productName = VACSRemoteTests;
+			productReference = A00000000000000000000121 /* VACSRemoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A00000000000000000000042 /* VACSRemoteUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000093 /* Build configuration list for PBXNativeTarget "VACSRemoteUITests" */;
+			buildPhases = (
+				A00000000000000000000027 /* Sources */,
+				A00000000000000000000026 /* Frameworks */,
+				A00000000000000000000028 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A00000000000000000000053 /* PBXTargetDependency */,
+			);
+			name = VACSRemoteUITests;
+			productName = VACSRemoteUITests;
+			productReference = A00000000000000000000122 /* VACSRemoteUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A00000000000000000000060 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2600;
+				LastUpgradeCheck = 2600;
+				TargetAttributes = {
+					A00000000000000000000040 = {
+						CreatedOnToolsVersion = 26.0;
+					};
+					A00000000000000000000041 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = A00000000000000000000040;
+					};
+					A00000000000000000000042 = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = A00000000000000000000040;
+					};
+				};
+			};
+			buildConfigurationList = A00000000000000000000092 /* Build configuration list for PBXProject "VACSRemote" */;
+			compatibilityVersion = "Xcode 15.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A00000000000000000000070;
+			productRefGroup = A00000000000000000000073 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A00000000000000000000040 /* VACSRemote */,
+				A00000000000000000000041 /* VACSRemoteTests */,
+				A00000000000000000000042 /* VACSRemoteUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A00000000000000000000023 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000016 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000025 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000028 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A00000000000000000000022 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000001 /* VACSRemoteApp.swift in Sources */,
+				A00000000000000000000002 /* ContentView.swift in Sources */,
+				A00000000000000000000003 /* RemoteEndpoint.swift in Sources */,
+				A00000000000000000000004 /* ConnectionState.swift in Sources */,
+				A00000000000000000000005 /* EndpointNormalizer.swift in Sources */,
+				A00000000000000000000006 /* ConnectionRepository.swift in Sources */,
+				A00000000000000000000007 /* ReachabilityPreflight.swift in Sources */,
+				A00000000000000000000008 /* ConnectionListViewModel.swift in Sources */,
+				A00000000000000000000009 /* RemoteWebViewModel.swift in Sources */,
+				A0000000000000000000000A /* ConnectionListView.swift in Sources */,
+				A0000000000000000000000B /* ConnectionFormView.swift in Sources */,
+				A0000000000000000000000C /* RemoteSessionView.swift in Sources */,
+				A0000000000000000000000D /* WebViewStore.swift in Sources */,
+				A0000000000000000000000E /* WebViewContainer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000024 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000011 /* EndpointNormalizerTests.swift in Sources */,
+				A00000000000000000000012 /* ConnectionRepositoryTests.swift in Sources */,
+				A00000000000000000000013 /* ReachabilityPreflightTests.swift in Sources */,
+				A00000000000000000000014 /* RemoteWebViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000027 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A00000000000000000000015 /* VACSRemoteUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A00000000000000000000051 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VACSRemote;
+			target = A00000000000000000000040 /* VACSRemote */;
+			targetProxy = A00000000000000000000050 /* PBXContainerItemProxy */;
+		};
+		A00000000000000000000053 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = VACSRemote;
+			target = A00000000000000000000040 /* VACSRemote */;
+			targetProxy = A00000000000000000000052 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		A000000000000000000000A0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A000000000000000000000A1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		A000000000000000000000A2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = UKWBW3QP24;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = VACSRemote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = network.vacs.remote.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A000000000000000000000A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = UKWBW3QP24;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = VACSRemote/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = network.vacs.remote.ios;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		A000000000000000000000A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/Frameworks",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = network.vacs.remote.ios.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VACSRemote.app/VACSRemote";
+				TEST_TARGET_NAME = VACSRemote;
+			};
+			name = Debug;
+		};
+		A000000000000000000000A5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@loader_path/Frameworks",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = network.vacs.remote.ios.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/VACSRemote.app/VACSRemote";
+				TEST_TARGET_NAME = VACSRemote;
+			};
+			name = Release;
+		};
+		A000000000000000000000A6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = network.vacs.remote.ios.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VACSRemote;
+			};
+			name = Debug;
+		};
+		A000000000000000000000A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 26.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = network.vacs.remote.ios.uitests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = VACSRemote;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A00000000000000000000090 /* Build configuration list for PBXNativeTarget "VACSRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A000000000000000000000A2 /* Debug */,
+				A000000000000000000000A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000091 /* Build configuration list for PBXNativeTarget "VACSRemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A000000000000000000000A4 /* Debug */,
+				A000000000000000000000A5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000092 /* Build configuration list for PBXProject "VACSRemote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A000000000000000000000A0 /* Debug */,
+				A000000000000000000000A1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000093 /* Build configuration list for PBXNativeTarget "VACSRemoteUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A000000000000000000000A6 /* Debug */,
+				A000000000000000000000A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A00000000000000000000060 /* Project object */;
+}
