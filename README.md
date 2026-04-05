@@ -62,39 +62,14 @@ xcodebuild -scheme VACSRemote -project VACSRemote.xcodeproj -sdk iphonesimulator
 - The remote endpoint itself does not provide authentication or encryption
 - Only use it on a trusted LAN or trusted VPN path
 
-## Publishing Checklist
-
-Before pushing this repo to GitHub, review the items below:
-
-- `VACSRemote.xcodeproj/project.pbxproj`
-  Contains `DEVELOPMENT_TEAM = UKWBW3QP24;`
-- `VACSRemote.xcodeproj/project.pbxproj`
-  Contains your current bundle identifiers such as `network.vacs.remote.ios`
-- `VACSRemote.xcodeproj/project.xcworkspace/xcuserdata/...`
-  User-specific Xcode workspace state should usually not be committed
-- `.DS_Store`
-  Finder metadata should usually not be committed
-- `VACSRemoteUITests/VACSRemoteUITests.swift`
-  Contains hardcoded loopback test addresses like `127.0.0.1:9600`
-
-None of the above were removed automatically.
-
-## Recommended Git Ignore Entries
-
-Typical entries you may want in `.gitignore`:
-
-```gitignore
-.DS_Store
-xcuserdata/
-*.xcuserstate
-```
-
 ## Limitations
 
 - This app depends on the VACS desktop app serving its remote web UI
 - It is intentionally a thin shell, not a full native reimplementation
 - If the upstream remote web UI changes, the in-app experience changes with it
 
+## This project are created by [Codex](https://openai.com/codex/)
+
 ## License
 
-This repository currently does not declare a license. Add one before publishing if you want others to reuse or modify the code.
+MIT License
