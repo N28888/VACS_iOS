@@ -20,6 +20,10 @@ struct WebViewContainer: UIViewRepresentable {
         let webView = WKWebView(frame: .zero, configuration: configuration)
         webView.navigationDelegate = context.coordinator
         webView.allowsBackForwardNavigationGestures = false
+        webView.scrollView.isScrollEnabled = false
+        webView.scrollView.bounces = false
+        webView.scrollView.alwaysBounceVertical = false
+        webView.scrollView.alwaysBounceHorizontal = false
         webView.scrollView.contentInsetAdjustmentBehavior = .never
         webView.scrollView.pinchGestureRecognizer?.isEnabled = false
         webView.accessibilityIdentifier = "remote-web-view"
@@ -79,6 +83,12 @@ struct WebViewContainer: UIViewRepresentable {
             document.head.appendChild(meta);
           }
           meta.setAttribute('content', content);
+          document.documentElement.style.overflow = 'hidden';
+          document.body.style.overflow = 'hidden';
+          document.documentElement.style.overscrollBehavior = 'none';
+          document.body.style.overscrollBehavior = 'none';
+          document.documentElement.style.touchAction = 'none';
+          document.body.style.touchAction = 'none';
         })();
         """
 
