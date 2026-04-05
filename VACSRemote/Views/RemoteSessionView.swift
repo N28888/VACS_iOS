@@ -11,9 +11,9 @@ struct RemoteSessionView: View {
         NavigationStack {
             ZStack {
                 Color(
-                    red: 210 / 255,
-                    green: 213 / 255,
-                    blue: 219 / 255
+                    red: 121 / 255,
+                    green: 128 / 255,
+                    blue: 141 / 255
                 )
                     .ignoresSafeArea()
 
